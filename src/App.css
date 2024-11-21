@@ -1,38 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe6f2; /* Fondo rosa pastel */
+  color: #5e345e; /* Texto en tono oscuro pastel */
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #d86fb0; /* Rosa intenso pastel */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Spinner */
+.spinner {
+  font-size: 1.2rem;
+  color: #d86fb0;
+  background-color: #ffedf7; /* Fondo claro rosa pastel */
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 20px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Tabla */
+.tabla {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.tabla th, .tabla td {
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #ffb3d9; /* Línea rosa suave */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabla th {
+  background-color: #f8cce2; /* Rosa pastel */
+  color: #5e345e;
+  font-weight: bold;
+}
+
+.tabla tr:hover {
+  background-color: #ffedf7; /* Rosa claro al pasar el cursor */
+}
+
+.tabla tr:last-child td {
+  border-bottom: none;
+}
+
+/* Formulario */
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffe6f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ffb3d9; /* Borde rosa pastel */
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.formulario button {
+  background-color: #d86fb0; /* Rosa intenso pastel */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #bf5c9b; /* Más oscuro al pasar el cursor */
 }
